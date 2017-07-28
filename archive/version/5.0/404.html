@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="title" content="Главная страница сайта">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=cyrillic-ext,vietnamese,latin-ext,latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="/style.css" type="text/css" rel="stylesheet">
+	<title>404 Not Found</title>
+  </head>
+  <body>
+  <style type="text/css">
+body {  
+  position: relative;
+  overflow: hidden;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('body').append('<img class="HideImg" src="/img/omfg.jpg" width="1602" height="900" alt="Img" />');
+  $('.HideImg').remove();
+   /*для заглушки*/ 
+  $('#jquery_jplayer').jPlayer({
+    ready: function (event) {
+      $(this).jPlayer("setMedia", {
+        mp3: "/mp3/no-way.mp3"
+      });
+    },
+   swfPath: '/jplayer',
+   wmode: "window",
+   solution: 'html, flash',
+   supplied: 'mp3',
+   preload: 'metadata',
+   volume: 0.8,
+   muted: false,
+   loop :true,
+   errorAlerts: false,
+   warningAlerts: false
+  });
+      
+  /*для заглушки*/  
+  
+  $('.BikovImg img').click(function(){
+    $('.TextLine p').show();
+    $('.TextLine img').show();
+    $('.TextLine').find('p#'+this.id+'_text, img#'+this.id).hide();
+    return false;
+  });
+  $('#no_way').click(function(){
+    $('#jquery_jplayer').jPlayer("play");
+    $('.NotFoundBg').append('<img class="NoWay" src="/img/omfg.jpg" />');
+    $('.LogoBlock, .BikovNegoduet').hide();
+    $('.NotFoundBg').css('background', '#643a6b');
+    return false;
+  });  
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      $('#jquery_jplayer').jPlayer("stop");
+      $('.NoWay').remove();
+      $('.LogoBlock, .BikovNegoduet').show();
+      $('.NotFoundBg').css('background', 'url(/img/bg_404.jpg) no-repeat 50% 0');
+    }
+  });
+});
+</script>
+<div id="jquery_jplayer"></div>
+<div class="NotFoundBg">
+  <div class="LogoBlock">
+    <div class="LogoLine"></div>
+    <div class="WidthPage">
+      <div class="LogoNF"><a href="/"><img src="/img/logo_404.png" width="166" height="167" alt="404 not found" /></a></div>
+      <div class="LogoText">
+        ошибка: 404
+        <p>Страниница не найдена<br />
+        Или она будет в <span id="no_way" title="НЕ ВЗДУМАЙ!!!!">Среду</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="BikovNegoduet">
+    <div class="TextLine">
+      <div class="WidthPage">
+        <p id="bt_one_text">я сделяль, а ты полямалъся:с</p>
+        <p id="bt_two_text">или ты все поломал? м?</p>
+        <div class="BikovImg">
+          <img id="bt_one" src="/img/not1.png" width="319" height="470" alt="Bikov" />
+          <img id="bt_two" src="/img/not2.png" width="268" height="308" alt="Angry Bikov" />
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/main.js"></script>
+	<script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+  </body>
+</html>

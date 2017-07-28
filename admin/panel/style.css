@@ -1,0 +1,59 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+body{background-color:#515b5e}
+
+.iconsweet{font-family:iconSweets;font-weight:normal}
+.widget_title{background-color:#eee;height:38px}
+.widget_title span{font-size:24px;float:left;color:#6c6c6c;width:35px;text-align:center}
+.widget_title h5{color:#6c6c6c;font-size:14px;padding:13px 0px 10px}
+nav#primary_nav{float:left;padding-top:92px}
+nav#primary_nav ul li{width:83px;padding:5px 9px 10px 1px;margin-bottom:15px;text-align:center}
+nav#primary_nav ul li a{color:#d8e0e2;text-decoration:none;display:block;padding-top:45px;background:url(images/nav_sprite.png) no-repeat center}
+nav#primary_nav ul li.nav_dashboard a{background-position:12px -64px}
+nav#primary_nav ul li.nav_dashboard.active a{background-position:12px 0px}
+nav#primary_nav ul li.nav_graphs a{background-position:-73px -64px}
+nav#primary_nav ul li.nav_graphs.active a{background-position:-73px 0px}
+nav#primary_nav ul li.nav_forms a{background-position:-434px -64px}
+nav#primary_nav ul li.nav_forms.active a{background-position:-434px 0px}
+nav#primary_nav ul li.nav_typography a{background-position:-249px -64px}
+nav#primary_nav ul li.nav_typography.active a{background-position:-249px 0px}
+nav#primary_nav ul li.nav_uielements a{background-position:-341px -64px}
+nav#primary_nav ul li.nav_uielements.active a{background-position:-341px 0px}
+nav#primary_nav ul li.nav_pages a{background-position:-159px -64px}
+nav#primary_nav ul li.nav_pages.active a{background-position:-158px 0px}
+nav#primary_nav ul li.active{background:#fff;padding-left:4px;padding-right:6px}
+nav#primary_nav ul li.active a{color:#4a4a4a}
+section#main_content{margin-left:93px;background-color:#fff;min-height:650px}
+#secondary_nav{float:left}
+#secondary_nav h2{color:#8a9294;font-size:20px;padding:0px 15px;margin-top:21px;line-height:36px}
+#secondary_nav ul{margin:21px 15px}
+#secondary_nav ul li{padding:12px 0px;border-top:solid 1px #dcdfe0}
+#secondary_nav ul li a{color:#818386;text-decoration:none;line-height:17px}
+#secondary_nav ul li a span{font-size:21px;margin:-4px 8px 0px 5px}
+#secondary_nav ul li.active a{color:#478cfe}
+dl.user_info{height:92px;margin-left:-92px}
+dl.user_info dd{padding:14px 12px;float:left;width: 275px;height:64px;background:#889395}
+dl.user_info dd a.welcome_user{text-decoration:none;color:#000;font-size:14px;display:block;margin-bottom:9px}
+dl.user_info dd a.welcome_user strong{font-weight:bold;color:#fff}
+dl.user_info dd span.log_data{color:#000;display:block;margin-bottom:7px;font-size:11px}
+dl.user_info dd a.logout{color:#fff;text-decoration:none}
+#content_wrap{padding:18px;margin-left:210px}
+table.activity_datatable select {width:100%}
+table.activity_datatable input {width:100%}
+table.activity_datatable th{background-color:#F8F8F8;text-transform:uppercase;font-size:11px;color:#6c6c6c;font-weight:bold;padding:12px 0px;border-right:solid 1px #e5e5e5;border-bottom:solid 1px #d3d3d3}
+table.activity_datatable td{padding:10px;color:#6c6c6c;vertical-align:middle}
+table.activity_datatable tr{border:solid 1px #e5e5e5}
+table.activity_datatable a{color:#363e40;text-decoration:none}
+table.activity_datatable span.pj_cat{display:inline-block;padding:3px 5px;font-size:10px;text-transform:uppercase;color:#fff;border-radius:3px}
+table.activity_datatable span.stat_up{color:#637b11}
+table.activity_datatable span.stat_down{color:#7b1111}
+table.activity_datatable span.iconsweet{font-size:17px}
+table.activity_datatable span.data_actions a{color:#6c6c6c;float:right;margin-right:1px;padding:0px 5px}
+table.activity_datatable span.green_highlight{background:#87ac51}
+table.activity_datatable span.grey_highlight{background:#757673}
+table.activity_datatable span.blue_highlight{background:#4572a7}
+footer button {position:relative;width:100%;padding:14px 16px;margin:0;outline:none;border:none;background-color:#ddd;color:#000;text-align:center;text-decoration:none;font-weight:normal;font-size:12px;font-family:Arial,Helvetica,Verdana,Tahoma,sans-serif !important;line-height:1;cursor:pointer}
+footer button:hover {color:#777;background:none;background:#bbb;text-decoration:none}
+footer button.redactor-modal-action-btn {background:none;color:#fff;background-color:#2461b5}
+footer button.redactor-modal-action-btn:hover {color:rgba(255,255,255,0.6);background-color:#1a4580}
